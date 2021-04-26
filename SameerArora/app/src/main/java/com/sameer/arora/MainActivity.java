@@ -202,7 +202,7 @@ public class MainActivity extends Activity implements OnClickListener {
         });
 
         Button login = (Button) findViewById(R.id.login);
-        /*login.setOnClickListener(new View.OnClickListener() {
+        login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View _view) {
                 SharedPreferences sp = getApplicationContext().getSharedPreferences("espValue", Context.MODE_PRIVATE);
@@ -271,7 +271,10 @@ public class MainActivity extends Activity implements OnClickListener {
                     Toast.makeText(MainActivity.this, "Invalid Key", Toast.LENGTH_LONG).show();
                 }
             }
-        });*/
+        });
+
+		//Login test
+		/*
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View _view) {
@@ -286,7 +289,7 @@ public class MainActivity extends Activity implements OnClickListener {
                 ed.putString("key", "Testing mode");
                 Toast.makeText(MainActivity.this, "Login Successfull", Toast.LENGTH_LONG).show();
             }
-        });
+        });*/
 
         ImageView paste = (ImageView) findViewById(R.id.paste);
         paste.setOnClickListener(new OnClickListener() {
